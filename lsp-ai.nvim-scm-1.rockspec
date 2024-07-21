@@ -1,33 +1,33 @@
-package	= 'lsp-ai.nvim'
+package = "lsp-ai.nvim"
 
-version	= 'scm-1'
+version = "scm-1"
 
-rockspec_format = '3.0'
+rockspec_format = "3.0"
 
-source	= {
-	url	= 'git://github.com/SuperBo/lsp-ai.nvim.git'
+source = {
+  url = "git://github.com/SuperBo/lsp-ai.nvim.git",
 }
 
-description	= {
-  summary	= 'LSP-AI plugin for Neovim',
-	homepage	= 'https://github.com/SuperBo/lsp-ai.nvim',
-	license	= 'MIT',
+description = {
+  summary = "LSP-AI plugin for Neovim",
+  homepage = "https://github.com/SuperBo/lsp-ai.nvim",
+  license = "MIT",
 }
 
 dependencies = {
-  'lua>=5.1',
-  'nvim-lspconfig>=0.1.6',
+  "lua>=5.1",
+  "nvim-lspconfig>=0.1.6",
 }
 
 test_dependencies = {
-  'nlua>=0.2.0',
-  'busted>=2.2.0',
+  "nlua>=0.2.0",
+  "busted>=2.2.0",
 }
 
-build	= {
-	type = 'builtin',
+build = {
+  type = "builtin",
   copy_directories = {
-    'doc',
-    'plugin',
+    -- 'doc',
+    "plugin",
   },
 }
